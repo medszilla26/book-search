@@ -1,25 +1,13 @@
-import React, { Component } from "react";
-import { Nav, Navbar } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import React from "react";
 
-class Navigation extends Component {
-  render() {
-    return (
-      <div>
-        <Navbar bg="dark" variant="dark">
-          <Navbar.Brand href="/">Google Books</Navbar.Brand>
-          <Nav className="mr-auto">
-            <Nav.Link as={Link} to="/search">
-              Search
-            </Nav.Link>
-            <Nav.Link as={Link} to="/saved">
-              Saved
-            </Nav.Link>
-          </Nav>
-        </Navbar>
-      </div>
-    );
-  }
+function Navigation() {
+  return (
+    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a className="navbar-brand" href="/">
+        Google Book Search
+      </a>
+    </nav>
+  );
 }
 
 export default Navigation;
